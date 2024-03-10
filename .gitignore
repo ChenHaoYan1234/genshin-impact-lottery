@@ -143,4 +143,6 @@ resource/
 .vscode/
 .idea/
 
-src/resource.py
+list.txt
+
+src/resource_rc.py
