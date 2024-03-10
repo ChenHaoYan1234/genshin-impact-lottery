@@ -132,7 +132,7 @@
       </font>
      </property>
      <property name="text">
-      <string>111111</string>
+      <string/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -151,13 +151,13 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource/resource.qrc">:/images/five.jpg</pixmap>
+      <pixmap resource="../resource/resource.qrc">:/images/one.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="closeBottom">
+    <widget class="QToolButton" name="closeButton">
      <property name="geometry">
       <rect>
        <x>1200</x>
@@ -176,9 +176,9 @@
       <string>X</string>
      </property>
     </widget>
+    <zorder>closeButton</zorder>
     <zorder>image</zorder>
     <zorder>name</zorder>
-    <zorder>closeBottom</zorder>
    </widget>
   </widget>
  </widget>
