@@ -5,6 +5,7 @@ from PySide6.QtCore import QSize, QUrl
 
 import resource_rc
 from BaseMainWindow import Ui_MainWindow
+from TenWidget import TenWidget
 
 
 class MainWindow(Ui_MainWindow):
@@ -19,16 +20,17 @@ class MainWindow(Ui_MainWindow):
         self.audio_output = QtMultimedia.QAudioOutput()
         self.media_player.setAudioOutput(self.audio_output)
 
+        self.ten_result = TenWidget(self)
+
         self.video.setVisible(False)
         self.result.setVisible(False)
+        self.ten_result.setVisible(False)
 
         self.name.raise_()
         self.closeButton.raise_()
 
         self.one.clicked.connect(self.oneClicked)
         self.ten.clicked.connect(self.tenClicked)
-
-        self.ten.setDisabled(True)
 
         self.setupList()
 
@@ -63,29 +65,12 @@ class MainWindow(Ui_MainWindow):
         self.media_player.setPosition(0)
         self.media_player.play()
 
-    def tenClosed(self):
-        if self.choiceList != []:
-            self.name.setText(self.choiceList.pop())
-        else:
-            self.result.setVisible(False)
-            self.start.setVisible(True)
-
     def tenPlayed(self, status):
         if status == QtMultimedia.QMediaPlayer.MediaStatus.EndOfMedia:
-            self.result.setVisible(True)
+            self.ten_result.setVisible(True)
             self.video.setVisible(False)
-            self.choiceList = []
-            tmp = self.list.copy()
-            while len(self.choiceList) <= 9:
-                choice = random.choice(tmp)
-                tmp.remove(choice)
-                self.choiceList.append(choice)
-            self.name.setText(self.choiceList.pop())
-            try:
-                self.closeButton.clicked.disconnect()
-            except:
-                pass
-            self.closeButton.clicked.connect(self.tenClosed)
+            self.choiceList = random.choices(self.list, k=10)
+            self.ten_result.setName(self.choiceList)
 
     def tenClicked(self):
         self.video.setVisible(True)

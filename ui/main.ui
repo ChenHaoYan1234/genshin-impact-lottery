@@ -48,9 +48,6 @@
        <height>720</height>
       </rect>
      </property>
-     <property name="text">
-      <string/>
-     </property>
      <property name="pixmap">
       <pixmap resource="../resource/resource.qrc">:/images/bg.jpg</pixmap>
      </property>
@@ -131,30 +128,8 @@
        <pointsize>50</pointsize>
       </font>
      </property>
-     <property name="text">
-      <string/>
-     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="image">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>1280</width>
-       <height>720</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../resource/resource.qrc">:/images/one.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="closeButton">
@@ -176,9 +151,22 @@
       <string>X</string>
      </property>
     </widget>
-    <zorder>closeButton</zorder>
-    <zorder>image</zorder>
-    <zorder>name</zorder>
+    <widget class="QLabel" name="image">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1280</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../resource/resource.qrc">:/images/one.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>

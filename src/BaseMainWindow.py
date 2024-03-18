@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-# Form generated from reading UI file 'main.ui'
+## Form generated from reading UI file 'main.ui'
 ##
-# Created by: Qt User Interface Compiler version 6.6.2
+## Created by: Qt User Interface Compiler version 6.6.2
 ##
-# WARNING! All changes made in this file will be lost when recompiling UI file!
+## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
 from PySide6.QtCore import QCoreApplication, QMetaObject, QRect, QSize, Qt
@@ -20,19 +20,16 @@ class Ui_MainWindow(QMainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1280, 720)
-        sizePolicy = QSizePolicy(
-            QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            MainWindow.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
         MainWindow.setSizePolicy(sizePolicy)
         font = QFont()
         font.setFamilies([u"Sans Serif"])
         MainWindow.setFont(font)
         icon = QIcon()
-        icon.addFile(u":/images/icon.png", QSize(),
-                     QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u":/images/icon.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -78,9 +75,6 @@ class Ui_MainWindow(QMainWindow):
         font2.setFamilies([u"Sans Serif"])
         font2.setPointSize(20)
         self.closeButton.setFont(font2)
-        self.image.raise_()
-        self.name.raise_()
-        self.closeButton.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -89,15 +83,9 @@ class Ui_MainWindow(QMainWindow):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate(
-            "MainWindow", u"\u539f\u795e\u62bd\u5361", None))
-        self.background.setText("")
-        self.one.setText(QCoreApplication.translate(
-            "MainWindow", u"\u5355\u62bd", None))
-        self.ten.setText(QCoreApplication.translate(
-            "MainWindow", u"\u5341\u8fde\u62bd", None))
-        self.name.setText("")
-        self.image.setText("")
-        self.closeButton.setText(
-            QCoreApplication.translate("MainWindow", u"X", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"\u539f\u795e\u62bd\u5361", None))
+        self.one.setText(QCoreApplication.translate("MainWindow", u"\u5355\u62bd", None))
+        self.ten.setText(QCoreApplication.translate("MainWindow", u"\u5341\u8fde\u62bd", None))
+        self.closeButton.setText(QCoreApplication.translate("MainWindow", u"X", None))
     # retranslateUi
+
