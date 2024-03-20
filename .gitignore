@@ -140,6 +140,7 @@ cython_debug/
 utils/
 
 .vscode/
+.idea/
 
 list.txt
 
