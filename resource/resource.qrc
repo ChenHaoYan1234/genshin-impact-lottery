@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="images">
+    <file>ten.png</file>
+    <file>one.jpg</file>
+    <file>bg.jpg</file>
+    <file>icon.ico</file>
+  </qresource>
+  <qresource prefix="videos">
+    <file>ten.mp4</file>
+    <file>one.mp4</file>
+  </qresource>
+  <qresource prefix="fonts">
+    <file>SimSun.ttf</file>
+  </qresource>
+</RCC>
